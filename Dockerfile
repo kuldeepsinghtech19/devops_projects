@@ -1,4 +1,5 @@
-From redhat/ubi8
+FROM redhat/ubi8
 RUN yum install python3 -y && pip insatll flask
-COPY first.py/app.py
+COPY test_app.py .
+COPY app.py .
 CMD ["python3","app.py"]
